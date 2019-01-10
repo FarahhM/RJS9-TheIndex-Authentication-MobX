@@ -8,6 +8,8 @@ import Loading from "./Loading";
 import AuthorsList from "./AuthorsList";
 import AuthorDetail from "./AuthorDetail";
 import BookList from "./BookList";
+import Signup from "./forms/SignupForm";
+import Signin from "./forms/LoginForm";
 
 // Store
 import authorStore from "./stores/AuthorStore";
@@ -24,6 +26,8 @@ class App extends Component {
           <Route path="/authors/:authorID" component={AuthorDetail} />
           <Route path="/authors/" component={AuthorsList} />
           <Route path="/books/:bookColor?" component={BookList} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/signin" component={Signin} />
         </Switch>
       );
     }
